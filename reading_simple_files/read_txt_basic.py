@@ -1,5 +1,5 @@
 # Open a file: file
-file = open('something.txt', mode='r')
+file = open('reading_simple_files\something.txt', mode='r')
 
 # Print it
 print(file.read())
@@ -15,7 +15,7 @@ print(file.closed)
 
 # #############################
 # Read & print the first 3 lines
-with open('sth_bigger.txt') as file:
+with open('reading_simple_files\sth_bigger.txt') as file:
     print(file.readline())
     print(file.readline())
     print(file.readline())
@@ -25,10 +25,10 @@ with open('sth_bigger.txt') as file:
 import numpy as np
 
 # Assign the filename: file
-file = 'titanic.csv'
+file = 'reading_simple_files\\titanic.csv'
 
 # Import file using np.recfromcsv: d
 d = np.recfromcsv(file, encoding=None)
 
-# Print out first two entries of d
+# Print out first two records of d
 print(d[:2])
