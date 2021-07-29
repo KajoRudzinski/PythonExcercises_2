@@ -32,3 +32,13 @@ d = np.recfromcsv(file, encoding=None)
 
 # Print out first two records of d
 print(d[:2])
+
+# #######################
+# Import pandas as pd
+import pandas as pd
+
+# Read the file into a DataFrame: df
+df = pd.read_csv('reading_simple_files\\titanic.csv')
+
+# View the head of the DataFrame
+print(df.head())
